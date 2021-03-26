@@ -2,7 +2,7 @@
     class TwitterIdleAutoRefresh {
         get Manifest() { return browser.runtime.getManifest() }
         get FeedSelector() { return 'main [data-testid=primaryColumn] section[role=region]' }
-        get RefreshSelector() { return 'h1[role=heading] a[role=button] > div:first-child' }
+       get RefreshSelector() { return 'nav > a > div' }
         get StatusSelector() { return 'h1[role=heading] [href="/home"] svg' }
         get DefaultOptions() {
             return {
